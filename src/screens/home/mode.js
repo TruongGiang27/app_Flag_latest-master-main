@@ -31,7 +31,7 @@ const Mode = () => {
                     <Text style={style.text}>HARD</Text>
                     <Image style={style.hard} source={require('../../../assets/hardicon.png')} />
                 </TouchableOpacity>
-                <Image style={style.imgbottom} source={require('../../../assets/imgbottom.png')} />
+                {/* <Image style={style.imgbottom} source={require('../../../assets/imgbottom.png')} /> */}
 
             </View>
 
@@ -72,12 +72,7 @@ const style = StyleSheet.create({
         bottom:20,
     },
 
-    imgbottom: {
-        width: '100%',
-        height: '30%',
-        marginLeft: '8%',
-        marginTop: '5%',
-    },
+
 
     imgback: {
         width: 50,

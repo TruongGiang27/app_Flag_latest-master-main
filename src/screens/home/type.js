@@ -3,9 +3,8 @@ import React from 'react'
 import Mode from './mode';
 const image = { uri: 'https://i.pinimg.com/564x/1f/8b/34/1f8b34a81ded531546dda85c1dd45856.jpg' };
 const imagesetting = { uri: 'https://thenounproject.com/api/private/icons/4463025/edit/?backgroundShape=SQUARE&backgroundShapeColor=%23000000&backgroundShapeOpacity=0&exportSize=752&flipX=false&flipY=false&foregroundColor=%23000000&foregroundOpacity=1&imageFormat=png&rotation=0' };
-const imgbottom = {uri:'https://i.pinimg.com/564x/e2/89/be/e289be756cadd2d9fafebd2cff3173ed.jpg'};
-
-const Play =() => {
+const imgbottom = {uri:'https://i.pinimg.com/564x/19/ea/0d/19ea0d3667b016485e86f41519e09b78.jpg'}
+const Type =() => {
     return (
         <View style={style.body}>
             <View style={style.top}>
@@ -18,19 +17,15 @@ const Play =() => {
                 </View>
             </View>
 
-            <View style={style.mode}>
-
-                <TouchableOpacity style={style.playbtn}>
-                    <Text style={style.text}>PLAY</Text>
+            <View style={style.type}>
+                <TouchableOpacity style={style.playFlag}>
+                    <Text style={style.text}>Match Flag with Country Name</Text>
                 </TouchableOpacity>
 
-                <TouchableOpacity style={style.rankedbtn} onPress={onPress}>
-                    <Text style={style.text}>RANKED</Text>
+                <TouchableOpacity style={style.playName} onPress={onPress}>
+                    <Text style={style.text}>Match Country Name with Flag</Text>
                 </TouchableOpacity>
 
-                <TouchableOpacity style={style.howtoplaybtn} onPress={onPress}>
-                    <Text style={style.text}>HOW TO PLAY</Text>
-                </TouchableOpacity>
                 <Image style={style.imgbottom} source={require('../../../assets/imgbottom.png')} />
             </View>
 
@@ -41,7 +36,7 @@ const Play =() => {
     )
 }
 
-export default Play
+export default Type
 const style = StyleSheet.create({
     body: {
         flex: 1,
@@ -56,9 +51,9 @@ const style = StyleSheet.create({
 
     imgbottom: {
         width: '100%',
-        height: '50%',
+        height: '60%',
         marginLeft: '25%',
-        bottom:10,
+        bottom:11,
         // marginTop: '12%',
         opacity:0.8,
     },
@@ -74,6 +69,10 @@ const style = StyleSheet.create({
     nametext: {
         fontSize: 50,
         bottom:40,
+        color:'white',
+        fontWeight:'bold',
+        textAlign:'center',
+
     },
 
     imageaccount: {
@@ -87,10 +86,9 @@ const style = StyleSheet.create({
         width: 60,
         height: 90,
         marginRight: 280,
-
     },
 
-    mode: {
+    type: {
         width: '85%',
         height: '50%',
         marginLeft: 27,
@@ -99,46 +97,32 @@ const style = StyleSheet.create({
         bottom: 50,
     },
 
-    playbtn: {
-        width: '60%',
-        height: 70,
-        alignItems: 'center',
-        justifyContent: 'center',
-        backgroundColor: '#6A39A9',
-        padding: 10,
-        marginTop: '10%',
-        marginLeft: '20%',
-        borderRadius: 10,
-    },
-
-    rankedbtn: {
-        width: '60%',
-        height: 70,
-        alignItems: 'center',
+    playFlag: {
+        width: '70%',
+        height: '25%',
         justifyContent: 'center',
         backgroundColor: '#6A39A9',
         padding: 10,
         marginTop: 30,
-        marginLeft: '20%',
+        marginLeft: '16%',
         borderRadius: 10,
     },
 
-    howtoplaybtn: {
-        width: '60%',
-        height: 70,
-        alignItems: 'center',
+    playName: {
+        width: '70%',
+        height: '25%',
         justifyContent: 'center',
         backgroundColor: '#6A39A9',
         padding: 10,
         marginTop: 30,
-        marginLeft: '20%',
+        marginLeft: '16%',
         borderRadius: 10,
     },
 
     text: {
-        fontSize: 25,
+        fontSize:25,
         color: 'white',
         fontWeight: "900",
-        // fontFamily:'Roboto',
+        textAlign:'center',
     }
 });
