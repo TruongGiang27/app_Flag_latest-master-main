@@ -63,6 +63,9 @@ const style = StyleSheet.create({
     nametext: {
         fontSize: 50,
         bottom:40,
+        color:'white',
+        fontWeight:'bold',
+        textAlign:'center',
     },
 
     imageaccount: {
@@ -71,8 +74,6 @@ const style = StyleSheet.create({
         justifyContent: 'center',
         bottom:20,
     },
-
-
 
     imgback: {
         width: 50,

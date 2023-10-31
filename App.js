@@ -5,15 +5,13 @@ import Type from './src/screens/home/type';
 import Mode from './src/screens/home/mode';
 import Login from './src/screens/login/Login';
 import Setting from './src/screens/home/setting';
-
-// import Home from './src/screens/home/home';
 import Play from './src/screens/home/play';
 
 export default function App() {
   return (
     <View style={styles.container}>
       {/* <Login/> */}
-      <Play/>
+      {/* <Play/> */}
       {/* <Setting/> */}
       {/* <Type/> */}
       {/* <Mode/> */}
