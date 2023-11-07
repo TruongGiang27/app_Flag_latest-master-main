@@ -6,7 +6,15 @@ import Mode from './src/screens/home/mode';
 import Login from './src/screens/login/Login';
 import Setting from './src/screens/home/setting';
 
+import Gameplay from './src/screens/home/gameplay';
+import Gameplaywithflag from './src/screens/home/gameplaywithflag';
+import Gamehard from './src/screens/home/gamehard';
+import Gamehardwithflag from './src/screens/home/gamehard';
+
+
 // import Home from './src/screens/home/home';
+=======
+>>>>>>> 29a9f1d6b76c2d3f2615bbb04472df398e3519d5
 import Play from './src/screens/home/play';
 
 export default function App() {
