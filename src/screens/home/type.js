@@ -72,7 +72,6 @@ const style = StyleSheet.create({
         color:'white',
         fontWeight:'bold',
         textAlign:'center',
-
     },
 
     imageaccount: {

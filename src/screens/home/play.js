@@ -74,6 +74,9 @@ const style = StyleSheet.create({
     nametext: {
         fontSize: 50,
         bottom:40,
+        color:'white',
+        fontWeight:'bold',
+        textAlign:'center',
     },
 
     imageaccount: {
@@ -87,7 +90,6 @@ const style = StyleSheet.create({
         width: 60,
         height: 90,
         marginRight: 280,
-
     },
 
     mode: {
@@ -136,9 +138,9 @@ const style = StyleSheet.create({
     },
 
     text: {
-        fontSize: 25,
+        fontSize:25,
         color: 'white',
         fontWeight: "900",
-        // fontFamily:'Roboto',
+        textAlign:'center',
     }
 });
