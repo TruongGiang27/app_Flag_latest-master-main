@@ -1,6 +1,8 @@
 import { StatusBar } from 'expo-status-bar';
-import React from 'react'
-import { StyleSheet, Text, View,Image } from 'react-native';
+import * as React from 'react'
+import { StyleSheet, Text, View} from 'react-native';
+import { NavigationContainer } from '@react-navigation/native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import Type from './src/screens/home/type';
 import Mode from './src/screens/home/mode';
 import Login from './src/screens/login/Login';
@@ -22,7 +24,7 @@ export default function App() {
       {/* <Login/> */}
       {/* <Play/> */}
       {/* <Setting/> */}
-      {/* <Type/> */}
+      <Type/>
       {/* <Mode/> */}
       {/* <Gameplay/> */}
       {/* <Gameplaywithflag/> */}
@@ -34,6 +36,7 @@ export default function App() {
     </View>
   );
 }
+
 const styles = StyleSheet.create({
   container: {
     flex: 1,
