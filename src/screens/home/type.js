@@ -100,7 +100,9 @@ const style = StyleSheet.create({
         width: '70%',
         height: '25%',
         justifyContent: 'center',
-        backgroundColor: '#6A39A9',
+        backgroundColor: '#FAFAFF',
+        borderColor: '#6A39A9',
+        borderWidth: 5,
         padding: 10,
         marginTop: 30,
         marginLeft: '16%',
@@ -111,7 +113,9 @@ const style = StyleSheet.create({
         width: '70%',
         height: '25%',
         justifyContent: 'center',
-        backgroundColor: '#6A39A9',
+        backgroundColor: '#FAFAFF',
+        borderColor: '#6A39A9',
+        borderWidth: 5,
         padding: 10,
         marginTop: 30,
         marginLeft: '16%',
@@ -120,8 +124,10 @@ const style = StyleSheet.create({
 
     text: {
         fontSize:25,
-        color: 'white',
+        // color: 'white',
         fontWeight: "900",
         textAlign:'center',
+        color:'#6A39A9',
+
     }
 });

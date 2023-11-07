@@ -76,39 +76,36 @@ const style = StyleSheet.create({
     },
 
     imgback: {
-        width: 50,
-        height: 50,
-        top:10,
-        marginRight: 280,
+        width: 40,
+        height: 40,
+        marginRight: '80%',
     },
 
     easy: {
-        width: '23%',
+        width: '25%',
         height: '100%',
         marginLeft: 15,
     },
 
     medium: {
-        width: '23%',
+        width: '25%',
         height: '100%',
-        // marginLeft:55,
+        marginLeft:15,
     },
 
     hard: {
-        width: '23%',
+        width: '25%',
         height: '100%',
         marginLeft: 15,
     },
 
     mode: {
-        flex: 2,
-        width: '85%',
+        width: '90%',
         height: '50%',
-        marginBottom: 70,
-        marginLeft: 27,
+        marginLeft: '5%',
         backgroundColor: '#FAFAFF',
         borderRadius: 20,
-        bottom: 50,
+        bottom: '8%',
     },
 
     easybtn: {
