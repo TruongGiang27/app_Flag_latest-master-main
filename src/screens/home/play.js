@@ -56,10 +56,9 @@ const style = StyleSheet.create({
 
     imgbottom: {
         width: '100%',
-        height: '50%',
+        height: '60%',
         marginLeft: '25%',
-        bottom:10,
-        // marginTop: '12%',
+        top:'2%',
         opacity:0.8,
     },
 
@@ -83,22 +82,22 @@ const style = StyleSheet.create({
         width: '40%',
         height: '45%',
         justifyContent: 'center',
-        bottom:20,
+        bottom:'10%',
     },
 
     imagesetting: {
-        width: 60,
-        height: 90,
-        marginRight: 280,
+        width: 40,
+        height: 60,
+        marginRight: '80%',
     },
 
     mode: {
-        width: '85%',
+        width: '90%',
         height: '50%',
-        marginLeft: 27,
+        marginLeft: '5%',
         backgroundColor: '#FAFAFF',
         borderRadius: 20,
-        bottom: 50,
+        bottom: '8%',
     },
 
     playbtn: {
