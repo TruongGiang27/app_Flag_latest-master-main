@@ -24,14 +24,13 @@ export default function App() {
       {/* <Login/> */}
       {/* <Play/> */}
       {/* <Setting/> */}
-      <Type/>
+      {/* <Type/> */}
       {/* <Mode/> */}
       {/* <Gameplay/> */}
       {/* <Gameplaywithflag/> */}
       {/* <Gamehard/> */}
       {/* <Gamehardwithflag/> */}
-
-
+      
       <StatusBar style="auto" />
     </View>
   );
