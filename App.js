@@ -8,12 +8,16 @@ import Mode from './src/screens/home/mode';
 import Login from './src/screens/login/Login';
 import Setting from './src/screens/home/setting';
 
+import Home from './src/screens/test/home';
+import Play from './src/screens/test/play';
+import PlayModeOne from './src/screens/testPlay/playModeOne';
+import Total from './src/screens/testPlay/total';
 import Gameplay from './src/screens/home/gameplay';
 import Gameplaywithflag from './src/screens/home/gameplaywithflag';
 import Gamehard from './src/screens/home/gamehard';
 import Gamehardwithflag from './src/screens/home/gamehard';
 
-
+const Stack = createNativeStackNavigator();
 // import Home from './src/screens/home/home';
 
 import Play from './src/screens/home/play';
@@ -30,7 +34,15 @@ export default function App() {
       {/* <Gameplaywithflag/> */}
       {/* <Gamehard/> */}
       {/* <Gamehardwithflag/> */}
+      <NavigationContainer>
+      <Stack.Navigator initialRouteName="TestFrontend" screenOptions={{headerShown: false}}>
+        <Stack.Screen name="Home" component={Home} />
+        <Stack.Screen name="Play" component={Play} />
+        <Stack.Screen name="GamePlayWithFlag" component={Gameplaywithflag} />
+        <Stack.Screen name="Total" component={Total} />
 
+      </Stack.Navigator>
+      </NavigationContainer>
 
       <StatusBar style="auto" />
     </View>
