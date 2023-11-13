@@ -1,9 +1,16 @@
 import { ImageBackground, StyleSheet, Text, View, Dimensions, Image, TouchableHighlight, TouchableOpacity } from 'react-native'
-import React from 'react'
+import React,{useState, useEffect} from 'react'
+import { useRoute } from '@react-navigation/native';
 width=Dimensions.get('screen').width
 height=Dimensions.get('screen').height
-const Total = () => {
+const Total = ({navigation}) => {
+    const route = useRoute();
+    const score = route.params?.score;
+    const handlePlayAgain = () => {
+        navigation.navigate('Gameplaywithflag', { resetState: true });
+    }
     return (
+        
         <View style={styles.container}>
             <View style={styles.img}>
                 <ImageBackground style={styles.image} source={require('../../../assets/Play.png')} resizeMode="cover" >
@@ -17,7 +24,7 @@ const Total = () => {
                     </View>
 
                     <View style={styles.score}>
-                            <Text style={styles.uscore}> Your score 50</Text>
+                            <Text style={styles.uscore}> Your score {score}</Text>
                     </View>
 
 
@@ -42,8 +49,8 @@ const Total = () => {
                     <View style={styles.home}>
                     
 
-                        <TouchableOpacity style={styles.btn}>
-                            <Text style={styles.uscore1}> Play again </Text>
+                        <TouchableOpacity style={styles.btn} onPress={handlePlayAgain}>
+                            <Text style={styles.uscore1} > PLAY AGAIN </Text>
                         </TouchableOpacity>
                     </View>
                     
@@ -87,11 +94,11 @@ btn:{
     },
     uscore: {
         textAlign: 'center',
-        fontSize: 50,
+        fontSize: width * 0.11,
         fontWeight: '600',
         color: '#FAFAFA',
         backgroundColor: '#6A39A9',
-        width: '70%',
+        width: '80%',
         paddingVertical: 20,
         borderRadius: 10,
     },
@@ -106,11 +113,11 @@ btn:{
     uscore1: {
         lineHeight:50,
         textAlign: 'center',
-        fontSize: 30,
+        fontSize: width * 0.06,
         color: '#FAFAFA',
         fontWeight: '600',
         backgroundColor: '#6A39A9',
-        paddingVertical: 20,
+        paddingVertical: 10,
         borderRadius: 10,
     }
 })
