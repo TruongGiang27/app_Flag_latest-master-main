@@ -2,8 +2,8 @@ import { View, Text, StyleSheet, Image, Dimensions, Button, TouchableOpacity, us
 import React,{ useState,useEffect  } from 'react';
 import ProgressBar from 'react-native-progress/Bar';
 
-// width=Dimensions.get('screen').width
-// height=Dimensions.get('screen').height
+width=Dimensions.get('screen').width
+height=Dimensions.get('screen').height
 
 const Gamehardwithflag = () => {
   const [numQuestionsAnswered, setNumQuestionsAnswered] = useState(0);
